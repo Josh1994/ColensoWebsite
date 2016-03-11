@@ -6,7 +6,7 @@ var client = new basex.Session ("127.0.0.1", 1984, "admin", "admin");
 client.execute ("open movies");
 
 /* GET home page. */
-// Testing master update
+// Testing master update 2
 router.get('/', function(req, res, next) {
 client.execute("xquery for $movie in //movie[position() lt 10] "+ 
 	"return <movie> {$movie/title} {$movie/id} </movie>",
