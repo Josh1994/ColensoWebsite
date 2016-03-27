@@ -11,10 +11,17 @@ router.get("/", function(req, res) {
 	function(error,result) {
 	 	if (error){ console.error(error);}
 	 	else{
-	 		res.render('index', { title: 'ECS Video Rental' , placer : result.result });
-	 				// varName: req.query.text box name. This is to get the input from the text box
+	 		res.render('index', { title: 'ECS Wut Rental' , placer : result.result });
 	 	}
 	 		}
 	 		);
 });
+
+/*GET search page (working)*/ 
+//router.get('/search', function(req,res){
+
+
+	//res.render('index', {title:'Search Results', content: req.query.searchString});
+
+//});
 module.exports = router;
