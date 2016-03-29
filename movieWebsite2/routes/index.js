@@ -7,7 +7,7 @@ client.execute ("OPEN Colenso");
 /* GET home page. */
 router.get("/", function(req, res) {
 	client.execute("XQUERY declare default element namespace 'http://www.tei-c.org/ns/1.0';" + 
-	"//name[@type='place' and position() = 1 and . = 'Manawarakau']",
+	"//name[@type='place' and position() = 1 and . = 'Napier']",
 	function(error,result) {
 	 	if (error){ console.error(error);}
 	 	else{
@@ -16,12 +16,4 @@ router.get("/", function(req, res) {
 	 		}
 	 		);
 });
-
-/*GET search page (working)*/ 
-//router.get('/search', function(req,res){
-
-
-	//res.render('index', {title:'Search Results', content: req.query.searchString});
-
-//});
 module.exports = router;
