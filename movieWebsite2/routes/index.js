@@ -6,7 +6,7 @@ client.execute ("OPEN Colenso");
 
 /* GET home page. */
 router.get("/", function(req, res) {
-res.render('index', { title: 'Colenso Wesbite' , placer : "Hello"});
+res.render('index', { title: 'ECS Wut Rental' , placer : "Hello"});
 
 });
 module.exports = router;
