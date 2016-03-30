@@ -1,16 +1,20 @@
 extends ../node_modules/jade-bootstrap/_bootstrap
 
+
 head
 	title = title
 block body
-	+navbar("ECS Movies", "dropdown_menu")
+	+navbar("Colenso Website", "dropdown_menu")
 		+nav_item("/", "active") Home
 		+nav_item("/search") Search
 	.container
 		h1 #{title}
 		.container
-		p|	Welcome to #{title}. We have an excellent collection of videos in stock for you.
-		|	We are based in #{placer}.
+		p|	Welcome to #{title}. 
+		i|Printer of some of the most significant documents in New Zealand history, missionary, explorer 
+		i|and botanist, a free wheeling politician and controversialist 
+		i|– William Colenso was a maverick
+
 		.container
 			form(action="/search", method="get")
 				input(type="text", name="searchString")

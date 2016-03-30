@@ -3,15 +3,15 @@ extends ../node_modules/jade-bootstrap/_bootstrap
 head
   title = title
 block body
-  +navbar("ECS Movies", "dropdown_menu")
+  +navbar("Colenso Wesbite", "dropdown_menu")
     +nav_item("/") Home
     +nav_item("/search", "active") Search
   .container
     h1 #{title}
     .container
-    p|  Welcome to #{title}. Here is you search result #{placerr}.
+    p|  This is the #{title} for !{placer}.
+     //-| !{doc}
     .container
         <pre>
-        !{placer}
         !{Array}
         </pre>
