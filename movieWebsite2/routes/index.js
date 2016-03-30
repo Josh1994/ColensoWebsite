@@ -6,14 +6,7 @@ client.execute ("OPEN Colenso");
 
 /* GET home page. */
 router.get("/", function(req, res) {
-	client.execute("XQUERY declare default element namespace 'http://www.tei-c.org/ns/1.0';" + 
-	"//name[@type='place' and position() = 1 and . = 'Napier']",
-	function(error,result) {
-	 	if (error){ console.error(error);}
-	 	else{
-	 		res.render('index', { title: 'ECS Wut Rental' , placer : result.result });
-	 	}
-	 		}
-	 		);
+res.render('index', { title: 'ECS Wut Rental' , placer : "Hello"});
+
 });
 module.exports = router;

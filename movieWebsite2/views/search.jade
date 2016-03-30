@@ -10,9 +10,8 @@ block body
     h1 #{title}
     .container
     p|  Welcome to #{title}. Here is you search result #{placerr}.
-    | You searched #{placer}.
     .container
-      form(action="/search", method="get")
-        input(type="text", name="searchString")
-        input(type="submit")
-  
+        <pre>
+        !{placer}
+        !{Array}
+        </pre>
