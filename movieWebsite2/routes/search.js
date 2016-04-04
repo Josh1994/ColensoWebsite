@@ -23,6 +23,7 @@ router.get("/", function(req,res){
     if (error){ console.error(error);}
     else{
       list = result.result.split('\n'); //comma is shown every result dude to split in new line
+      //console.log(result.result);
       var i = 0;
       for (i = 0; i < list.length; i++){
         var holder = list[i];
@@ -36,6 +37,6 @@ router.get("/", function(req,res){
       res.render('search', {title:'Search Results',placer: searchValue,doc:result.result, Array:list});
       }
   }
-  );
-});
+  )
+;});
 module.exports = router;

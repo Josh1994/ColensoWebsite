@@ -9,9 +9,11 @@ block body
   .container
     h1 #{title}
     .container
-    p|  This is the #{title} for !{placer}.
+    p  This is the #{title} for !{placer}.
      //-| !{doc}
     .container
-        <pre>
-        !{Array}
-        </pre>
+      ul
+        each val in Array
+          li
+            a(href="/result?filr=#{val}") #{val}
+            //- this is also possible href ="/open?filr=#{val}". This would make it look lik a form on the open page. implement same way as the search page.
