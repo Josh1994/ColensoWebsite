@@ -4,7 +4,6 @@ var basex = require ('basex')
 var client = new basex.Session ("127.0.0.1", 1984, "admin", "admin");
 var cheerio = require ('cheerio');
 var domain = 'http://www.tei-c.org/ns/1.0';
-var jade = require("jade");
 client.execute ("OPEN Colenso");
 
 /* GET users listing. */
